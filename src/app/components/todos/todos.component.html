@@ -1,7 +1,7 @@
-<!-- *ngFor will loop through todo similar to map -->
-<div class="todos" *ngFor="let todo of todos; let i = index;">
+<div class="todos">
     <!-- Declare in .ts and put into html with {{ title }} -->
-    <div class="todo">
+    <!-- *ngFor will loop through todo similar to map -->
+    <div class="todo" *ngFor="let todo of todos; let i = index;">
         <div class="id">{{ i }}</div>
         <div class="content">{{ todo.content }}</div>
         <div class="delete">Remove</div>
